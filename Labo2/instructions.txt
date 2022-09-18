@@ -1,1 +1,3 @@
 Simply open index.html
+
+Menus' name are in the foodList array in script.js
