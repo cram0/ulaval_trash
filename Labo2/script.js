@@ -37,7 +37,8 @@ const searchbarUpdate = async (e) => {
                 dropdownList[0].appendChild(newFoodElement);
             }
         }
-        if (dropdownList.length == 0) {
+        console.log(dropdownList[0].children.length);
+        if (dropdownList[0].children.length == 0) {
             const noResultElem = document.createElement("li");
             noResultElem.innerText = "No result found";
             dropdownList[0].appendChild(noResultElem);
