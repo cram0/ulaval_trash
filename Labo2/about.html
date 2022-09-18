@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html>
-	<header>
-		<link rel="stylesheet" type="text/css" href="style.css" />
-	</header>
-	<body>
-		<div class="navbar">
-			<a href="index.html" class="title">Sushi Shop</a>
-			<ul class="menu">
-				<li><a href="menu.html">Menu</a></li>
-				<li><a href="about.html">About us</a></li>
-			</ul>
-		</div>
-		<div class="description_block">
-			<p class="description">
-				Welcome to our Sushi Shop where we transform the best fish
-				dishes into magic
-			</p>
-		</div>
-	</body>
+    <header>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <script src="script.js"></script>
+    </header>
+    <body>
+        <div class="navbar">
+            <a href="index.html" class="title">Sushi Shop</a>
+            <form>
+                <div style="display: flex">
+                    <div style="display: flex; align-items: center">
+                        <span class="clear-searchbar-btn" style="float: right; position: relative" onclick="clearSearchBar()"><i class="fa fa-times" style="font-size: 1em; color: red"></i></span>
+                        <input class="searchbar" type="text" placeholder="Search" />
+                    </div>
+                    <input type="submit" />
+                </div>
+                <div class="dropdown">
+                    <ul class="dropdown-list"></ul>
+                </div>
+            </form>
+            <ul class="menu">
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </div>
+        <div class="description_block">
+            <p class="description">Welcome to our Sushi Shop where we transform the best fish dishes into magic</p>
+        </div>
+    </body>
 </html>
