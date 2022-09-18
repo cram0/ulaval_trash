@@ -2,11 +2,18 @@
 <html>
 	<header>
 		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="script.js"></script>
 	</header>
 	<body>
-		< class="navbar">
+		<div class="navbar">
 			<a href="index.html" class="title">Sushi Shop</a>
-			<input type="text" placeholder="Search" />
+			<form>
+				<input type="text" placeholder="Search" />
+				<div class="dropdown">
+					<ul class="dropdown-list"></ul>
+				</div>
+				<input type="submit" />
+			</form>
 			<ul class="menu">
 				<li><a href="menu.html">Menu</a></li>
 				<li><a href="about.html">About us</a></li>
